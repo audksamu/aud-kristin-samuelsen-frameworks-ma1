@@ -1,0 +1,91 @@
+@import "_variables.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Open+Sans&display=swap');
+
+
+body{
+    background:var(--background-colour);
+    font-family: "Archivo Narrow", sans-serif;
+ }
+
+.card {
+    margin: 0 !important;
+    padding-bottom: 100%;
+    max-width: 510px;
+    max-height: 504px;
+ }
+
+.box {
+    margin-top: 30px !important;
+    padding: 5;
+}
+
+.box__content {
+    background: var(--box-main-colour) !important;
+    border-radius: 15px;
+    border-color: var(--box-main-colour);
+    border-width: 3px;
+}
+
+.box__content--light {
+    background: var(--box-1-colour) !important;
+    border-color: var(--nav-active-colour);
+}
+
+.box__content--active {
+    background: var(--nav-active-colour) !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.navbar-text {
+     color: var(--Title-colur) !important;
+     font-size: 36px;
+}
+
+h2 {
+    margin-top: 30px;
+    color: var(--page-heading-colour);
+    font-size: 34px;
+}
+
+.navbar {
+    background: var(--navbar-background-colur) !important; 
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--primary-text-colour);
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: var(--nav-active-colour);
+}
+
+.nav-item {
+    font-size: 18px !important;
+    font-family: "Open Sans", sans-serif;
+ }
+
+#main_content {
+    margin-bottom: 227px;;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--box-1-colour);
+    text-align: center;
+    position:static;
+    font-size: 12px;
+}
+
+@media (min-width: 768px)  {
+    footer {
+        background-color: var(--navbar-background-colur);
+        color: var(--primary-text-colour);
+        position:fixed !important;
+        bottom: 0;
+        left:0;
+    }
+}
