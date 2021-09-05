@@ -34,6 +34,7 @@ body{
 
 .box__content--active {
     background: var(--nav-active-colour) !important;
+    border-color: var(--box-1-colour);
 }
 
 a:hover {
