@@ -1,5 +1,9 @@
+
+/*importing variables from seperate css fil*/
 @import "_variables.css";
 
+
+/*importing fonts from googleapi*/
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Open+Sans&display=swap');
 
 
@@ -8,6 +12,7 @@ body{
     font-family: "Archivo Narrow", sans-serif;
  }
 
+ /*Modifying bootstrap class*/
 .card {
     margin: 0 !important;
     padding-bottom: 100%;
@@ -15,6 +20,30 @@ body{
     max-height: 504px;
  }
 
+.navbar-text {
+    color: var(--Title-colur) !important;
+    font-size: 36px;
+}
+
+.navbar {
+    background: var(--navbar-background-colur) !important; 
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--primary-text-colour);
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: var(--nav-active-colour);
+}
+
+.nav-item {
+    font-size: 18px !important;
+    font-family: "Open Sans", sans-serif;
+ }
+ /*End of bootstrap classes*/
+
+ /*BEM classes for formatting the main content*/
 .box {
     margin-top: 30px !important;
     padding: 5;
@@ -36,14 +65,10 @@ body{
     background: var(--nav-active-colour) !important;
     border-color: var(--box-1-colour);
 }
+/*End of BEM classes*/
 
 a:hover {
     text-decoration: none;
-}
-
-.navbar-text {
-     color: var(--Title-colur) !important;
-     font-size: 36px;
 }
 
 h2 {
@@ -51,23 +76,6 @@ h2 {
     color: var(--page-heading-colour);
     font-size: 34px;
 }
-
-.navbar {
-    background: var(--navbar-background-colur) !important; 
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: var(--primary-text-colour);
-}
-
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: var(--nav-active-colour);
-}
-
-.nav-item {
-    font-size: 18px !important;
-    font-family: "Open Sans", sans-serif;
- }
 
 #main_content {
     margin-bottom: 227px;;
